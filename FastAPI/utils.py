@@ -3,7 +3,7 @@
 from sqlalchemy import create_engine
 import boto3
 
-def get_db():
+def get_db(db_name="test.db"):
     engine = create_engine("sqlite:///./test.db")
     return engine
 

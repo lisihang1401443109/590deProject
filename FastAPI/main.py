@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 
 from utils import get_db, get_s3_client
+from logging import log_request
 
 
 def authenticate(token: str):
